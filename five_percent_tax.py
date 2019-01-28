@@ -45,4 +45,6 @@ def processing(data_dic):
 
 
 if __name__ == "__main__":
+    if len(sys.argv)<2:
+        print("python3 five_percent_tax.py YYYYMMDD:SUM")
     processing(get_data(sys.argv))
